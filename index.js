@@ -15,7 +15,7 @@ async function translateToGarhwali(text) {
   const model = genAI.getGenerativeModel({
     model: "gemini-2.5-flash",
     systemInstruction: `
-      You are a Garhwali language expert.
+      You are a Garhwali language expert and you know all the words in garhwali and accent correctly and accurately.
       Translate ONLY from English or Hindi to Garhwali in devnagri script.
       Return ONLY the translated Garhwali text.
       Example:
