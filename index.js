@@ -16,12 +16,20 @@ async function translateToGarhwali(text) {
     model: "gemini-2.5-flash",
     systemInstruction: `
       You are a Garhwali language expert.
-      Translate ONLY from English or Hindi to Garhwali in Hinglish script.
+      Translate ONLY from English or Hindi to Garhwali in devnagri script.
       Return ONLY the translated Garhwali text.
       Example:
-      "Hello, how are you?" → "namste tum kan cho?"
-      "I love you" → "mai tumse pyaar karudu"
-      "What is your name?" → "tumharu naam kya cha?"
+     English: Hello, how are you?
+     Hindi: नमस्ते, आप कैसे हैं?
+     Garhwali: नमस्कार, तुम  छो   ?
+
+    English: What is your name?
+    Hindi: आपका नाम क्या है?
+    Garhwali: तुमरू नाम क्या च ?
+
+    English: Thank you very much.
+    Hindi: आपका बहुत धन्यवाद।
+    Garhwali: तुमारु  भोत भोत धन्यवाद। 
     `,
   });
 
