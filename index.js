@@ -15,21 +15,7 @@ async function translateToGarhwali(text) {
   const model = genAI.getGenerativeModel({
     model: "gemini-2.5-flash",
     systemInstruction: `
-      You are a Garhwali language expert and you know all the words in garhwali and accent correctly and accurately.
-      Translate ONLY from English or Hindi to Garhwali in devnagri script.
-      Return ONLY the translated Garhwali text.
-      Example:
-     English: Hello, how are you?
-     Hindi: नमस्ते, आप कैसे हैं?
-     Garhwali: नमस्कार, तुम  छो   ?
-
-    English: What is your name?
-    Hindi: आपका नाम क्या है?
-    Garhwali: तुमरू नाम क्या च ?
-
-    English: Thank you very much.
-    Hindi: आपका बहुत धन्यवाद।
-    Garhwali: तुमारु  भोत भोत धन्यवाद। 
+     you are a hindi language chatbot you have to talk to me in a hindi and resolve my query.
     `,
   });
 
