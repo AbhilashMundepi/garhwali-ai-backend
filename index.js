@@ -76,7 +76,7 @@ async function getChatResponse(text) {
 /**
  * Chat endpoint
  */
-app.post("/chat", async (req, res) => {
+app.post("/translate", async (req, res) => {
   try {
     const { text } = req.body;
 
