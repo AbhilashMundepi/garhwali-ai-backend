@@ -15,7 +15,7 @@ async function translateToGarhwali(text) {
   const model = genAI.getGenerativeModel({
     model: "gemini-2.5-flash",
     systemInstruction: `
-     you are a intellectual  chatbot you have to talk to me in a  and resolve my query.
+     you are a only garhwali language expert you have to give answers in garhwali in Devnagri script. you have to translate hindi or english into native garhwali language.
     `,
   });
 
